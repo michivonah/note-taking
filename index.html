@@ -5,19 +5,48 @@
     <style>
       body{
         padding: 10px;
+        margin: 0;
         font-family: arial, sans-serif;
-        background: #f3f3f3;
-        color: #181818;
+        background: var(--background);
+        color: var(--color);
         outline: none;
+        text-align: left;
+        scroll-behavior: smooth;
+        --theme: #2980b9;
+        --background: #f3f3f3;
+        --color: #181818;
       }
       
       h1{
         color: #3498db;
       }
+      
+      notespace{
+        width: 100%;
+      }
+      
+      ::selection {background: var(--theme); color: #ffffff; border-radius: 12px;}
+      ::-moz-selection {background: var(--theme); color: #ffffff; border-radius: 12px;}
+      
+      ::-webkit-scrollbar{
+     width: 10px;
+     height: 4px;
+     background: transparent;
+   }
+
+   ::-webkit-scrollbar-thumb{
+     background: var(--maincolor);
+     border-radius: 8px;
+   }
     </style>
   </head>
   <body contenteditable>
-    <h1>Title</h1>
-    <p>Type here...</p>
+    <div id="notespace" contenteditable>
+      <h1>Title</h1>
+      <p>Type here...</p>
+    </div>
+    <div id="4btn">
+      <i class="ai-gear"></i>
+    </div>
   </body>
 </html>
