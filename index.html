@@ -38,25 +38,33 @@
      font-size: 28px;
      color: #fff;
      transition: .1s linear;
+     font-size: 26px;
    }
-      .btn:nth-child(1){
+      .btn:nth-child(2){
         top: 0;
      right: 0;
       }
       
-      .btn:nth-child(2){
+      .btn:nth-child(1){
         bottom: 0;
      right: 0;
       }
 
    .btn i{
-     margin-top: 0px;
+     margin-top: 4px;
      transition: .1s linear;
      stroke-width: 3px;
    }
 
    .btn i:hover{
-     margin-top: -5px;
+     margin-top: 0px;
+   }
+   
+   hr{
+     border: 1px solid;
+     color: #D3D3D3;
+     width: calc(100% - 20px);
+     margin-left: 10px;
    }
 
       
@@ -75,13 +83,19 @@
    }
     </style>
   </head>
-  <body contenteditable>
+  <body>
     <div id="notespace" contenteditable>
-      <h1>Title</h1>
+      <h1 id="title">Title</h1>
+      <hr>
       <p>Type here...</p>
     </div>
+    
     <div class="btn">
       <i class="ai-gear"></i>
     </div>
+    
+    <script>
+    
+    </script>
   </body>
 </html>
