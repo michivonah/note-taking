@@ -1,1 +1,2 @@
-# note-taking
+# Easy browser note taking app
+- Simple
