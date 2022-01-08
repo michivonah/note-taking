@@ -90,12 +90,26 @@
       <p>Type here...</p>
     </div>
     
-    <div class="btn">
+    <div class="btn" onclick="save();">
       <i class="ai-gear"></i>
     </div>
     
-    <script>
+    <div class="btn" onclick="load();">
+      <i class="ai-paper"></i>
+    </div>
     
+    <script>
+    function save(){
+    var data = document.getElementById('notespace').innerHTML;
+    localStorage.setItem("data", data);
+    console.log("Succesfull");
+    }
+    
+    function load(){
+    var data = localStorage.getItem('data');
+    document.getElementById('notespace').innerHTML = data;
+    console.log("Restored!");
+    }
     </script>
   </body>
 </html>
